@@ -285,40 +285,93 @@ nav {
 }
 
 .about-me {
-  /* Define o estilo da seção */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 60vh; /* Diminui o tamanho da seção */
-  background-image: linear-gradient(to bottom, #21204C,#06101A );
-  background-size: 100% 200px;
-  background-position: 0% 100%;
-  transition: background-position 0.5s ease;
-}
-
-.about-me:hover {
-  /* Define o efeito de fundo quando o mouse passa por cima da seção */
-  background-position: 0% 50%;
-}
-
-.about-me h1 {
-  /* Define o estilo do título */
-  font-size: 32px;
-  color: #696AF3; /* Cor de galáxia: azul-celeste */
-  margin-bottom: 20px;
-}
-
-.about-me p {
-  /* Define o estilo do texto */
-  font-size: 18px;
-  color: #6495ED; /* Cor de galáxia: azul-escuro */
-  margin-bottom: 20px;
-  line-height: 1.5;
-  margin-right: 90px;
-  margin-left: 90px;
-  text-align: center;
-}
+    /* Define o estilo da seção */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; /* Diminui o tamanho da seção */
+    background-image: linear-gradient(to bottom, #21204C, #06101A);
+    background-size: 100% 200px;
+    background-position: 0% 100%;
+    transition: background-position 0.5s ease;
+  }
+  
+  .about-me:hover {
+    /* Define o efeito de fundo quando o mouse passa por cima da seção */
+    background-position: 0% 50%;
+  }
+  
+  .about-me h1 {
+    /* Define o estilo do título */
+    font-size: 32px;
+    color: #696AF3; /* Cor de galáxia: azul-celeste */
+    margin-bottom: 20px;
+  }
+  
+  .about-me p {
+    /* Define o estilo do texto */
+    font-size: 18px;
+    color: #6495ED; /* Cor de galáxia: azul-escuro */
+    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-right: 90px;
+    margin-left: 90px;
+    text-align: center;
+  }
+  
+  /* Media Queries para diferentes tamanhos de tela */
+  
+  @media (max-width: 1200px) {
+    .about-me h1 {
+      font-size: 28px;
+    }
+    .about-me p {
+      font-size: 16px;
+      margin-right: 60px;
+      margin-left: 60px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-me h1 {
+      font-size: 24px;
+    }
+    .about-me p {
+      font-size: 14px;
+      margin-right: 40px;
+      margin-left: 40px;
+      margin-top: 80px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-me h1 {
+      font-size: 20px;
+      margin-top: 980px;
+    }
+    .about-me p {
+      font-size: 12px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-me{
+        margin-top: 300px;
+    }
+    .about-me h1 {
+      font-size: 18px;
+      margin-top: 280px;
+    }
+    .about-me p {
+      font-size: 10px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+  
 
 .hab .container {
   display: flex;
