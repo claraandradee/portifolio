@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Clara Andrade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/flavicon.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="card">
+            <svg 
+                 viewBox="0 0 100% 100%"
+                 xmlns='http://www.w3.org/2000/svg'
+                 class="noise"
+                 >
+              <filter id='noiseFilter'>
+                <feTurbulence 
+                              type='fractalNoise' 
+                              baseFrequency='0.85' 
+                              numOctaves='6' 
+                              stitchTiles='stitch' />
+              </filter>
+          
+              <rect
+                    width='100%'
+                    height='100%'
+                    preserveAspectRatio="xMidYMid meet"
+                    filter='url(#noiseFilter)' />
+            </svg>
+
+            <div class="content">
+              <h1 class="nome">Clara Andrade</h1>
+              <img src="img/fotoClara.png" alt="foto" class="minhaImg">
+            </div>
+          </div>
+
+          <div class="gradient-bg">
+            <svg 
+                 viewBox="0 0 100vw 100vw"
+                 xmlns='http://www.w3.org/2000/svg'
+                 class="noiseBg"
+                 >
+              <filter id='noiseFilterBg'>
+                <feTurbulence 
+                              type='fractalNoise'
+                              baseFrequency='0.6'
+                              stitchTiles='stitch' />
+              </filter>
+          
+              <rect
+                    width='100%'
+                    height='100%'
+                    preserveAspectRatio="xMidYMid meet"
+                    filter='url(#noiseFilterBg)' />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+            <div class="gradients-container">
+              <div class="g1"></div>
+              <div class="g2"></div>
+              <div class="g3"></div>
+              <div class="g4"></div>
+              <div class="g5"></div>
+              <div class="interactive"></div>
+            </div>
+          </div>
+    </header>
+    
+    <nav id="nav-2">
+        <a class="link-2" href="https://docs.google.com/document/d/1DcYVYGpIhMgpDBMGxm6mMeQBD49xM6yowBpj6-exun4/edit?usp=sharing" target="_blank">ABAIXAR CV</a>
+    </nav>
+
+    <section class="about-me">
+      <h1>Sobre Mim</h1>
+      <p>Desenvolvedora de software, atualmente cursando o último semestre do curso técnico em Informática no Colégio Técnico da UNICAMP, em Campinas. 
+
+        Apaixonada por inovação e aprendizado contínuo, estou sempre em busca de novos desafios e oportunidades para expandir meu conhecimento. Meu maior hobby é dedicar-me ao aprendizado e explorar novas tecnologias para criar experiências digitais envolventes e eficientes.
+        
+        Em busca do meu primeiro estágio e pronta para superar qualquer desafio!</p>
+    </section>
+
+    <section class="hab">
+      <h2 style="text-align: center; margin-top: 30px;">Habilidades</h2>
+      <div class="container">
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+              <h3>HTML5</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+              <h3>CSS3</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+              <h3>JavaScript</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+              <h3>TypeScript</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+              <h3>React.js</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+              <h3>Next.js</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+              <h3>Node.js</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+              <h3>Python</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+              <h3>Java</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+              <h3>C#</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+              <h3>MySQL</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+              <h3>PostgreSQL</h3>
+          </div>
+          <div class="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+              <h3>MongoDB</h3>
+          </div>
+      </div>
+  </section>
+
+  <section id="projetos">
+    <h2 class="tituloProjetos">Meus Projetos</h2>
+
+    <div class="container">
+      <div class="container">
+        <div class="projeto">
+            <img src="img/caixeiro.png" alt="Problema dos Multiplos Caixeiros Viajantes">
+            <a href="https://github.com/claraandradee/Multiple-Traveling-Salesman-Problem-II" target="_blank">Multiple Traveling Salesman</a>
+        </div>
+
+        <div class="projeto">
+            <img src="img/solarSystem.png" alt="Sistema Solar">
+            <a href="https://github.com/claraandradee/Solar-System" target="_blank">Solar System</a>
+        </div>
+
+        <div class="projeto">
+          <img src="img/trainNetwork.png" alt="Rede de Trens">
+          <a href="https://github.com/claraandradee/TrainNetwork" target="_blank">Train Network</a>
+        </div>
+
+        <div class="projeto">
+          <img src="img/doeVida.png" alt="Doe Vida">
+          <a href="https://github.com/claraandradee/DoeVida" target="_blank">Doe Vida</a>
+        </div>
+
+        <div class="projeto">
+          <img src="img/tcc.png" alt="Fire Forecast">
+          <a href="https://github.com/claraandradee/firstPrototype_FireForecast" target="_blank">Fire Forecast</a>
+        </div>
+
+        <div class="projeto">
+          <img src="img/forca.png" alt="Jogo da Forca">
+          <a href="https://github.com/claraandradee/JavaHangman" target="_blank">Jogo da Forca</a>
+        </div>
+
+      </div>
+    </div>
+  </section>  
+
+  <div class="contact" id="contact">
+    <h2>Contato</h2>
+    <div class="buttons">
+        <img src="img/whatsapp.png" class="contact-button" class="fas fa-phone">
+        <img src="img/o-email.png" class="contact-button" class="fas fa-phone">       
+        <img src="img/linkedin.png" class="contact-button" class="fas fa-phone">
+        <img src="img/github.png" class="contact-button" class="fas fa-phone"> 
+    </div>
+    <div class="social-names">
+        <a href="https://wa.me/5519971177089" target="_blank">Whatsapp</a>
+        <a href="mailto:clara.andrade.ssantos@gmail.com" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/clara-andrade-044229270/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/claraandradee" target="_blank">GitHub</a>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Clara Andrade. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
